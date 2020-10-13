@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label prefHeight="35.0" prefWidth="155.0" text="Task Manager">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TableView fx:id="tv" prefHeight="485.0" prefWidth="691.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="66.0" style="-fx-alignment: CENTER;" text="ID" />
+          <TableColumn fx:id="CPU" prefWidth="165.0" text="CPU" />
+            <TableColumn fx:id="User" prefWidth="132.0" text="User" />
+            <TableColumn fx:id="StartInstant" prefWidth="165.0" text="StartInstant" />
+            <TableColumn fx:id="CMD" prefWidth="162.0" text="Command" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="555.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#nProcess" text="New Process" />
+            <Button mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
